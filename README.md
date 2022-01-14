@@ -18,7 +18,7 @@ We performed experiments on the features of various CNNs by integrating our appr
 
 The features extracted by the ResNet-50 are used to decide either the normal or anomalous events that are fed to the multi-layer BD-LSTM in the form of chunks for an anomaly detection decision. The first chunk of the 1000 features from the initial frame of the video forms the input to the multi-layer BD-LSTM at time “t”, while the next feature’s chunk at t+1 forms the second input to the multi-layer BD-LSTM, and so on. The overall structural design of the proposed multi-layer BD-LSTM is illustrated in Fig. 5. Fig. 5(a) shows the training stage, in which the training data are passed to the model. The hidden state combines the forward and backward passes in the output layer, while backpropagation is used to adjust the bias and weights. A sample of 20% of the total data is used for validation purposes, while cross-entropy is employed for error rate assessment along with a learning rate as default of 0.001.
 
-Citation Policy
+# Citation Policy
 If you would like to cite this repository, please use the following DOI:
 
 DOI https://doi.org/10.1007/s11042-020-09406-3
